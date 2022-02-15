@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("imagenes/ruben.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+	  <a href="#" class="w3-display-bottomleft w3-padding-large">
+   <a href="paginaweb.html" >VOLVER</a></div>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black"></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black"></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black"></a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag"></span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Goleadores<br></span>
+  </div> 
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Adr street, 5015</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Nuestros goleadores</span></h5>
+    <p>Ruben Castro,el goleador que nunca se cansa de su oficio,tras cumplir los 40 años Ruben sigue con cifras goleadoras viviendo ya su tercera juventud,el salvador del cartagena lleva 12 tantos en liga con un olfato de gol incansable.Y es que en el cuadro albinegro no hay nadie que asemeje sus numeros,el siguiente con mas goles es Alfredo Ortuño con tan solo 3 goloes en lo que llevamos de liga,numeros que hablan muy bien del canario, Actualmente se encuentra como segundo maximo goleador del efese con un total de 66 goles en dos años.</p></p>
+    <p>.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><
+    </div>
+    <img src="imagenes/toche.jpg"style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p>En primer lugar tenemos a toché.Una leyenda del conjunto albinegro en las que en cada temporada superaba la friolera de 20 goles,un jugador historico del futbol profesional español que con el cartagena anoto un total de 77 goles. </p>
+  </div>
+</div>
+
+
+<!-- End page content -->
+basado en:
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_cafe
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+<a href="index.html" >volver a la pagina web principal</a>
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
